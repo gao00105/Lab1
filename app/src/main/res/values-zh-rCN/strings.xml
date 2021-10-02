@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Lab2</string>
+    <string name="app_name">Lab3</string>
     <string name="hello_message">你好世界！</string>
-    <string name="button_message">我是一个按钮</string>
+    <string name="button_message">按钮</string>
     <string name="edittext_message">我是编辑文本</string>
     <string name="edit_message">这里编辑...</string>
     <string name="display_message">你的编辑文本有： </string>
@@ -13,4 +13,5 @@
     <string name="switch_message">重力</string>
     <string name="radiobtn_message">咖啡</string>
     <string name="radiobtn_message2">茶</string>
+    <string name="spin_message">旋转旗帜</string>
 </resources>

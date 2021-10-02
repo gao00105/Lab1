@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">Lab2</string>
+    <string name="app_name">Lab3</string>
     <string name="hello_message">Hello World!</string>
-    <string name="button_message">I am a button</string>
+    <string name="button_message">Button</string>
     <string name="edittext_message">I am an EditText</string>
     <string name="edit_message">Edit here...</string>
     <string name="display_message">Your edit text has: </string>
@@ -12,4 +12,5 @@
     <string name="switch_message">Gravity</string>
     <string name="radiobtn_message">Coffee</string>
     <string name="radiobtn_message2">Tea</string>
+    <string name="spin_message">Spin flag</string>
 </resources>
