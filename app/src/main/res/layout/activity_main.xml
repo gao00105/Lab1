@@ -4,7 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:layout_marginTop="27dp"
+    android:layout_marginBottom="27dp"
+    android:layout_marginLeft="48dp"
+    android:layout_marginRight="48dp">
 
     <Button
         android:id="@+id/button1"
@@ -48,7 +52,8 @@
         android:id="@+id/flagview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="52dp"
         app:layout_constraintStart_toStartOf="@+id/button1"
         app:layout_constraintTop_toBottomOf="@+id/button1"
         app:srcCompat="@drawable/flag" />
@@ -57,11 +62,24 @@
         android:id="@+id/spin_switch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:textColor="@color/my_text"
+        android:layout_marginEnd="4dp"
         android:text="@string/spin_message"
+        android:textColor="@color/my_text"
         app:layout_constraintBottom_toBottomOf="@+id/flagview"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/flagview" />
+        app:layout_constraintTop_toTopOf="@+id/flagview"
+        app:layout_constraintVertical_bias="0.493" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:nextFocusLeft="@+id/button1"
+        android:nextFocusRight="@+id/button3"
+        android:nextFocusUp="@+id/button2"
+        android:nextFocusDown="@+id/spin_switch"
+        android:text="Button"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="@+id/button2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 

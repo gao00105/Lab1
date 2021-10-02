@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Lab3</string>
+    <string name="app_name">Lab3_TV</string>
     <string name="hello_message">Hello World!</string>
     <string name="button_message">Button</string>
     <string name="edittext_message">I am an EditText</string>
