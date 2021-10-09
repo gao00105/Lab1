@@ -2,7 +2,9 @@ package com.example.lab1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
@@ -23,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
     ImageView imgView;
     Switch sw;
     public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
+    SharedPreferences prefs = getSharedPreferences("MyData", Context.MODE_PRIVATE);
+    String emailAddress = prefs.getString("LoginName", "");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +38,9 @@ public class MainActivity extends AppCompatActivity {
             EditText email_address = findViewById(R.id.email_address);
             String message = email_address.getText().toString();
             nextPage.putExtra("EmailAddress", message);
+            SharedPreferences.Editor editor = prefs.edit();
+            editor.putString("LoginName", message);
+            editor.apply();
             startActivity(nextPage);
         });
     }
