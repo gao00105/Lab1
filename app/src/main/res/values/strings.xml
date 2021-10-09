@@ -13,4 +13,8 @@
     <string name="radiobtn_message">Coffee</string>
     <string name="radiobtn_message2">Tea</string>
     <string name="spin_message">Spin flag</string>
+    <string name="email_message">Enter your email address:</string>
+    <string name="email_address">Type email here</string>
+    <string name="password_message">Type your password:</string>
+    <string name="login">Login</string>
 </resources>
